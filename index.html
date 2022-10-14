@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="container mt-5">
+            <div class="card mx-auto shadow" style="max-width: 800px;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between" id="notify">
+                        <h3>Player1</h3>
+                        <h2>Get Started</h2>
+                        <h3>Player 2</h3>
+                    </div>
+
+                    <div class="d-flex justify-content-between d-none" id="display">
+                        <img src="dice-img/1.png" alt="" class="img-fluid animate">
+                        <img src="dice-img/2.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg" id="start">Start</button>
+                        <button class="btn btn-success btn-lg d-none" id="rollDice">Roll Dice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .card {
+            background-image: url(dice-img/rubydie.gif);
+            background-size: cover;
+            color: white;
+        }
+        #rollDice:active{
+            transform: scale(0.7);
+            transform: 0.3s ease;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>
